@@ -1,0 +1,12 @@
+1.multi、Exec、discard
+2.主从复制原理:
+	1.从服务器连接上主服务器发送同步消息
+	2.主服务器接到从同步消息，把持久化的rdb文件发送给从服务器
+	3.从服务器同步rdb数据
+3.主机挂掉，重启还是从机，从机挂掉，重启变主机
+4.从机命令:slaveof 主机ip(127.0.0.1) 主机端口6379
+5.查看当前服务器是从机还是主机:info replication
+6.将从机变成主机:slaveof no one
+7.启动redis：redis-server redis6379.conf
+8.连接redis-cli -p 端口号(6379)
+9.redis集群

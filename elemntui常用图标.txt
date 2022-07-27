@@ -1,0 +1,6 @@
+icon="el-icon-delete"
+icon="el-icon-edit"
+icon="el-icon-upload2"
+icon="el-icon-search"
+icon="el-icon-plus"
+icon="el-icon-picture"
